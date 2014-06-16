@@ -72,6 +72,7 @@ public class WeixinPostRequest implements WeixinRequest{
 		this._parametersString=parametersString;
 		this._encrypt=encrypt;
 		this._postData=postData;
+		System.out.println(postData);
 	}
 
 }

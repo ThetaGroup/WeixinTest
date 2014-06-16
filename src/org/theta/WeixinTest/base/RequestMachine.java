@@ -27,7 +27,7 @@ public class RequestMachine {
 	}
 	
 	/**
-	 * Í¨¹ý·¢ËÍÒ»´Î°üº¬echostrµÄgetÇëÇóÅÐ¶ÏÊÇ·ñÄÜ¹»Á¬½Ó
+	 * Í¨ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Î°ï¿½echostrï¿½ï¿½getï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * @return
 	 * @throws NoSuchAlgorithmException
 	 * @throws IOException
@@ -45,7 +45,7 @@ public class RequestMachine {
 	}
 	
 	/**
-	 * ·¢ËÍpostÇëÇó
+	 * ï¿½ï¿½ï¿½ï¿½postï¿½ï¿½ï¿½ï¿½
 	 * @param postData
 	 * @return
 	 * @throws NoSuchAlgorithmException 

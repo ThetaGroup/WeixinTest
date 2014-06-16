@@ -1,7 +1,7 @@
 package org.theta.WeixinTest.data;
 
 /**
- * Î¢ÐÅÊµÀýÉú³ÉÆ÷£¬ÐèÔ¤¶¨ÒåË«·½ÓÃ»§
+ * Î¢ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¤ï¿½ï¿½ï¿½ï¿½Ë«ï¿½ï¿½ï¿½Ã»ï¿½
  * @author Ranger Chen
  *
  */
@@ -32,7 +32,7 @@ public class WeixinXmlDataFactory {
 	
 		
 	/**
-	 * »ñÈ¡ÎÄ±¾ÏûÏ¢ÊµÀý
+	 * ï¿½ï¿½È¡ï¿½Ä±ï¿½ï¿½ï¿½Ï¢Êµï¿½ï¿½
 	 * @param content
 	 * @return
 	 */
@@ -46,7 +46,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * »ñÈ¡»¶Ó­ÏûÏ¢ÊµÀý
+	 * ï¿½ï¿½È¡ï¿½ï¿½Ó­ï¿½ï¿½Ï¢Êµï¿½ï¿½
 	 * @return
 	 */
 	public WeixinXmlData getSubscribeEventInstance(){
@@ -60,7 +60,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * »ñÈ¡²Ëµ¥ÏûÏ¢ÊµÀý
+	 * ï¿½ï¿½È¡ï¿½Ëµï¿½ï¿½ï¿½Ï¢Êµï¿½ï¿½
 	 * @param eventKey
 	 * @return
 	 */
@@ -76,7 +76,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * »ñÈ¡ÎÄ±¾ÏûÏ¢XML
+	 * ï¿½ï¿½È¡ï¿½Ä±ï¿½ï¿½ï¿½Ï¢XML
 	 * @param content
 	 * @return
 	 */
@@ -86,7 +86,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * »ñÈ¡»¶Ó­ÏûÏ¢XML
+	 * ï¿½ï¿½È¡ï¿½ï¿½Ó­ï¿½ï¿½Ï¢XML
 	 * @return
 	 */
 	public String getSubscribeXml(){
@@ -95,7 +95,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * »ñÈ¡²Ëµ¥ÏûÏ¢XML
+	 * ï¿½ï¿½È¡ï¿½Ëµï¿½ï¿½ï¿½Ï¢XML
 	 * @param eventKey
 	 * @return
 	 */

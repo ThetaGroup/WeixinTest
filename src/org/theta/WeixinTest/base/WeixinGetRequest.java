@@ -58,5 +58,6 @@ public class WeixinGetRequest implements WeixinRequest{
 		this._url=url;
 		this._parametersString=parametersString;
 		this._encrypt=encrypt;
+		System.out.println(url+parametersString);
 	}
 }
