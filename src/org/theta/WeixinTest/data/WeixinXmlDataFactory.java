@@ -1,7 +1,7 @@
 package org.theta.WeixinTest.data;
 
 /**
- * ΢��ʵ�����������Ԥ����˫���û�
+ * 微锟斤拷实锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟皆わ拷锟斤拷锟剿拷锟斤拷没锟�
  * @author Ranger Chen
  *
  */
@@ -32,7 +32,7 @@ public class WeixinXmlDataFactory {
 	
 		
 	/**
-	 * ��ȡ�ı���Ϣʵ��
+	 * 锟斤拷取锟侥憋拷锟斤拷息实锟斤拷
 	 * @param content
 	 * @return
 	 */
@@ -46,7 +46,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * ��ȡ��ӭ��Ϣʵ��
+	 * 锟斤拷取锟斤拷迎锟斤拷息实锟斤拷
 	 * @return
 	 */
 	public WeixinXmlData getSubscribeEventInstance(){
@@ -60,7 +60,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * ��ȡ�˵���Ϣʵ��
+	 * 锟斤拷取锟剿碉拷锟斤拷息实锟斤拷
 	 * @param eventKey
 	 * @return
 	 */
@@ -76,7 +76,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * ��ȡ�ı���ϢXML
+	 * 锟斤拷取锟侥憋拷锟斤拷息XML
 	 * @param content
 	 * @return
 	 */
@@ -86,7 +86,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * ��ȡ��ӭ��ϢXML
+	 * 锟斤拷取锟斤拷迎锟斤拷息XML
 	 * @return
 	 */
 	public String getSubscribeXml(){
@@ -95,7 +95,7 @@ public class WeixinXmlDataFactory {
 	}
 	
 	/**
-	 * ��ȡ�˵���ϢXML
+	 * 锟斤拷取锟剿碉拷锟斤拷息XML
 	 * @param eventKey
 	 * @return
 	 */

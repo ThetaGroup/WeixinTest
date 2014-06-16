@@ -1,69 +1,69 @@
 package org.theta.WeixinTest.data;
 
 /**
- * EventKey³£Á¿ÉèÖÃ
+ * EventKeyå¸¸é‡è®¾ç½®
  * @author Ranger Chen
  *
  */
 public class EventKey {
 	
 	/**
-	 *	¹úÓĞÆ·ÅÆ
+	 *	å›½æœ‰å“ç‰Œ
 	 */
 	public static final String GYPP="e_gypp";
 	
 	/**
-	 * Æ½Ì¨ÌØÉ«
+	 * å¹³å°ç‰¹è‰²
 	 */
 	public static final String PTTS="e_ptts";
 	
 	/**
-	 * °²È«±£ÕÏ
+	 * å®‰å…¨ä¿éšœ
 	 */
 	public static final String AQBZ="e_aqbz";
 	
 	/**
-	 * ÊÕÒæÀúÊ·
+	 * æ”¶ç›Šå†å²
 	 */
 	public static final String SYLS="e_syls";
 	
 	/**
-	 * ÁªÏµÎÒÃÇ
+	 * è”ç³»æˆ‘ä»¬
 	 */
 	public static final String LXWM="e_lxwm";
 	
 	/**
-	 * ×îĞÂ¹«¸æ
+	 * æœ€æ–°å…¬å‘Š
 	 */
 	public static final String ZXGG="e_zxgg";
 	
 	/**
-	 * Ã½Ìå±¨µÀ
+	 * åª’ä½“æŠ¥é“
 	 */
 	public static final String MTBD="e_mtbd";
 	
 	/**
-	 * ÈÈÃÅ»î¶¯
+	 * çƒ­é—¨æ´»åŠ¨
 	 */
 	public static final String RMHD="e_rmhd";
 	
 	/**
-	 * ÎÒµÄÕË»§
+	 * æˆ‘çš„è´¦æˆ·
 	 */
 	public static final String WDZH="e_wdzh";
 	
 	/**
-	 * ¿ÉÍ¶×ÊÏîÄ¿
+	 * å¯æŠ•èµ„é¡¹ç›®
 	 */
 	public static final String KTZXM="e_ktzxm";
 	
 	/**
-	 * ×òÈÕÊÕÒæ
+	 * æ˜¨æ—¥æ”¶ç›Š
 	 */
 	public static final String ZRSY="e_zrsy";
 	
 	/**
-	 * ÕË»§°ó¶¨
+	 * è´¦æˆ·ç»‘å®š
 	 */
 	public static final String ZHBD="e_zhbd";
 	

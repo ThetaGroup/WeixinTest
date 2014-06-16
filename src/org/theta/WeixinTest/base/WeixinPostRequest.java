@@ -5,7 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.URL;
-import java.net.HttpURLConnection;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
 
 /**
  * 
@@ -18,35 +23,46 @@ public class WeixinPostRequest implements WeixinRequest{
 	private String _encrypt;
 	private String _postData;
 	
-	private static HttpURLConnection conn;
-	
+	private static HttpsURLConnection conn;
 	/**
 	 * @throws IOException
 	 * @return
+	 * @throws NoSuchAlgorithmException 
+	 * @throws KeyManagementException 
 	 */
-	public String send() throws IOException{
+	public String send() throws IOException, NoSuchAlgorithmException, KeyManagementException{
 		OutputStreamWriter out = null;
 	    BufferedReader in = null;
 	    String result = "";
 	    
+		SSLContext sc = SSLContext.getInstance("SSL");
+		sc.init(null, new TrustManager[] { new TrustAnyTrustManager() },
+				new java.security.SecureRandom());
+	    
 	    URL realUrl = new URL(this._url+this._parametersString);
-	    conn = (HttpURLConnection)realUrl.openConnection();
+	    conn = (HttpsURLConnection)realUrl.openConnection();
+	    
+		conn.setSSLSocketFactory(sc.getSocketFactory());
+		conn.setHostnameVerifier(new TrustAnyHostnameVerifier());
 	    conn.setRequestMethod("POST");
+	    
 	    conn.setDoOutput(true);
 	    conn.setDoInput(true);
-	    conn.setUseCaches(false);
-	    conn.setRequestProperty("Content-Type", "text/xml");
+	    conn.setUseCaches(true);
 	    
-	    out = new OutputStreamWriter(conn.getOutputStream(),"utf-8");
+	    conn.setRequestProperty("Accept-Language", "zh_CN");
+	    conn.setRequestProperty("Content-Type", "text/xml");
+	    conn.setRequestProperty("Charset", this._encrypt);
+	    
+	    out = new OutputStreamWriter(conn.getOutputStream(),this._encrypt);
 	    out.write(this._postData);
 	    out.flush();
 	    out.close();
 	    
-	    
-	    in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+	    in = new BufferedReader(new InputStreamReader(conn.getInputStream(),this._encrypt));
 	    String line;
 	    while ((line = in.readLine()) != null) {
-	    	result += line;
+	    	result += new String(line.getBytes(),this._encrypt);
 	    }
 	    
 	    result=new String(result.getBytes(),this._encrypt);
@@ -72,7 +88,6 @@ public class WeixinPostRequest implements WeixinRequest{
 		this._parametersString=parametersString;
 		this._encrypt=encrypt;
 		this._postData=postData;
-		System.out.println(postData);
 	}
 
 }

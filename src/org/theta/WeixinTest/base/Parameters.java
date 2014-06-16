@@ -23,7 +23,7 @@ public class Parameters {
     private static final char[] HEX_DIGITS={'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
 
     /**
-     * »ñÈ¡²ÎÊı×Ö´®£¬ÎŞecho£¬ÓÃ×÷Ò»°ãÇëÇó
+     * è·å–å‚æ•°å­—ä¸²ï¼Œæ— echoï¼Œç”¨ä½œä¸€èˆ¬è¯·æ±‚
      * @return
      */
     public String getParametersString(boolean first){
@@ -36,7 +36,7 @@ public class Parameters {
     }
     
     /**
-     * »ñÈ¡²ÎÊı×Ö´®£¬ÓĞecho£¬ÓÃ×÷Ê×´ÎÑéÖ¤ÇëÇó
+     * è·å–å‚æ•°å­—ä¸²ï¼Œæœ‰echoï¼Œç”¨ä½œé¦–æ¬¡éªŒè¯è¯·æ±‚
      * @return
      */
     public String getParametersStringWithEchostr(boolean first){
@@ -46,7 +46,7 @@ public class Parameters {
     }
     
 	/**
-	 * ×Ô¶¯Éú³É²ÎÊı
+	 * è‡ªåŠ¨ç”Ÿæˆå‚æ•°
 	 * @param token
 	 * @throws NoSuchAlgorithmException
 	 */
@@ -61,7 +61,7 @@ public class Parameters {
 	}
 	
 	/**
-	 * ÊÖ¶¯Éú³É²ÎÊı
+	 * æ‰‹åŠ¨ç”Ÿæˆå‚æ•°
 	 * @param token
 	 * @param timestamp
 	 * @param nonce
@@ -77,7 +77,7 @@ public class Parameters {
 	}
 	
 	/**
-	 * Éú³ÉSignatture
+	 * ç”ŸæˆSignatture
 	 * @param signature
 	 * @param timestamp
 	 * @param nonce
